@@ -1,9 +1,10 @@
 import { Fragment } from "react";
 import Head from "next/head";
+import { AppProps } from "next/app";
 import Layout from "../components/layout/layout";
 import "./globals.scss";
 
-function MyApp({ Component, pageProps }) {
+function MyApp({ Component, pageProps }: AppProps) {
   return (
     <Fragment>
       <Head>
