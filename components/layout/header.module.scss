@@ -1,0 +1,32 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    height: 10vh;
+    padding: 0 1.6rem;
+    background-color: #157266;
+    align-items: center;
+
+    .title {
+        font-size: 1.4rem;
+        color: #d9e717;
+    }
+
+    li {
+        list-style-type: none;
+    }
+
+    nav {
+        color: blue;
+    }
+
+    ul {
+        display: flex;
+        background-color: brown;
+        padding: 0.8rem;
+    }
+
+    li {
+        border-right: 0.2rem solid #19191b;
+    }
+
+}

@@ -1,6 +1,7 @@
 import { Fragment } from "react";
-import Head from 'next/head'
-import "./globals.css";
+import Head from "next/head";
+import Layout from "../components/layout/layout";
+import "./globals.scss";
 
 function MyApp({ Component, pageProps }) {
   return (
@@ -9,7 +10,9 @@ function MyApp({ Component, pageProps }) {
         <title>NextJS</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <Component {...pageProps} />;
+      <Layout>
+        <Component {...pageProps} />
+      </Layout>
     </Fragment>
   );
 }
